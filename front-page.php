@@ -17,13 +17,13 @@
 				if ( is_home() ) {
 					get_template_part( 'parts/loop', 'archive-grid' );
 				} else {
-					
+
 					if( get_option( 'options_disable_sections_on_pages' ) == 1 ) :
 						echo '<div class="container">';
-						get_template_part( 'parts/loop', 'page' );
+						get_template_part( 'parts/loop', 'front-page' );
 						echo '</div>';
 					else :
-						get_template_part( 'parts/loop', 'front-page' );
+						get_template_part( 'parts/sections' );
 					endif;
 				}
 				
