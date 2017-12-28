@@ -17,7 +17,14 @@
 				if ( is_home() ) {
 					get_template_part( 'parts/loop', 'archive-grid' );
 				} else {
-					get_template_part( 'parts/loop', 'front-page' );
+					
+					if( get_option( 'options_disable_sections_on_pages' ) == 1 ) :
+						echo '<div class="container">';
+						get_template_part( 'parts/loop', 'page' );
+						echo '</div>';
+					else :
+						get_template_part( 'parts/loop', 'front-page' );
+					endif;
 				}
 				
 				?>
