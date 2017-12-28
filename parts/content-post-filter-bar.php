@@ -5,8 +5,8 @@
 
 ?>
 
-<aside id="post-filter-bar" class="container centered-text">
-	
+<aside id="post-filter-bar" class="centered-text">
+
 	<form id="category-select" class="category-select" action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
 		<strong>Filter by category: </strong>
 		<?php

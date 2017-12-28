@@ -987,7 +987,8 @@ footer.site-footer {
 
 #post-filter-bar {
   padding-bottom: 2rem;
-  font-size: 80%; }
+  font-size: 80%;
+  width: 100%; }
 
 .archive main#main,
 .home.blog main#main {
