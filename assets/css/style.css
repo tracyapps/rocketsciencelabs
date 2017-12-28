@@ -672,13 +672,10 @@ footer.site-footer {
   .text-image-grid-container.image-text {
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse; }
-  .featured-blog-post-container.text-image .text-side .padding,
-  .text-image-grid-container.text-image .text-side .padding {
-    float: right; }
-    @media (max-width: 600px) {
-      .featured-blog-post-container.text-image .text-side .padding,
-      .text-image-grid-container.text-image .text-side .padding {
-        float: none; } }
+  @media (max-width: 600px) {
+    .featured-blog-post-container.text-image .text-side .padding,
+    .text-image-grid-container.text-image .text-side .padding {
+      float: none; } }
   .featured-blog-post-container.thirds > div,
   .text-image-grid-container.thirds > div {
     -ms-flex: auto;
@@ -747,7 +744,8 @@ footer.site-footer {
       .text-image-grid-container > div.text-side .padding {
         max-width: 45ch;
         padding-left: 2em;
-        padding-right: 2em; }
+        padding-right: 2em;
+        margin: 0 auto; }
     .featured-blog-post-container > div.image-side,
     .text-image-grid-container > div.image-side {
       background-size: cover;
